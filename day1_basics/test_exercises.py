@@ -69,7 +69,7 @@ class TestCreation:
         out = build_checkerboard(4)
         for i in range(4):
             for j in range(4):
-                expected = 1 if (i + j) % 2 == 0 else 0
+                expected = 0 if (i + j) % 2 == 0 else 1
                 assert out[i, j] == expected, f"Wrong at [{i},{j}]"
 
     def test_checkerboard_no_loop(self):
