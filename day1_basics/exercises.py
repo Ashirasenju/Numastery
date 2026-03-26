@@ -11,12 +11,14 @@ import numpy as np
 
 def zeros_like_int(shape: tuple) -> np.ndarray:
     """Return an integer zero-array of the given shape (dtype=np.int32)."""
-    raise NotImplementedError
+    arr = np.zeros(shape, dtype=np.int32)
+    return arr
 
 
 def create_range(start: float, stop: float, n: int) -> np.ndarray:
     """Return `n` evenly-spaced float64 values in [start, stop] (inclusive)."""
-    raise NotImplementedError
+    arr = np.linspace(start, stop, n, dtype=np.float64)
+    return arr
 
 
 def identity_block(n: int, k: int) -> np.ndarray:
@@ -25,7 +27,8 @@ def identity_block(n: int, k: int) -> np.ndarray:
     diagonals.  k=0 → main diagonal, k=1 → one above, k=-1 → one below.
     Hint: np.eye has a `k` parameter.
     """
-    raise NotImplementedError
+    arr = np.eye(n, n, k=k, dtype=np.float64)
+    return arr
 
 
 def build_checkerboard(n: int) -> np.ndarray:
@@ -34,7 +37,9 @@ def build_checkerboard(n: int) -> np.ndarray:
     Element [i, j] is 1 if (i + j) is even, else 0.
     Must work without any Python loop.
     """
-    raise NotImplementedError
+
+    arr = np.full((n, n), [1, 0], dtype=np.uint8)
+    return arr
 
 
 # ── 1.2  Shape & dtype ───────────────────────────────────────────────────────

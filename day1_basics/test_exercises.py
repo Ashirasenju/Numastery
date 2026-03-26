@@ -6,6 +6,7 @@ Run: pytest day1_basics/test_exercises.py -v
 import numpy as np
 import pytest
 from day1_basics.exercises import (
+
     zeros_like_int, create_range, identity_block, build_checkerboard,
     describe, safe_cast,
     flatten_and_sort, stack_as_matrix, tile_border,
