@@ -4,7 +4,6 @@ A structured, hands-on curriculum to take you from NumPy basics to advanced mast
 Each day has two files: **exercises** (with challenges to solve) and **tests** (pytest suite to validate your work).
 
 ## Structure
-
 ```
 numpy-mastery/
 ├── day1_basics/          Array creation, dtypes, shapes
